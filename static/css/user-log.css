@@ -1,0 +1,29 @@
+.content__container {
+    height: 468px;
+}
+
+.modal {
+    display: flex;
+}
+
+.modal__body {
+    margin-top: 168px;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.auth-form__desc {
+    margin-bottom: 24px;
+}
+
+.auth-form__policy {
+    margin-top: 24px;
+}
+
+.login--failure,
+.login--OK {
+    font-size: 1.4rem;
+    font-style: italic;
+}

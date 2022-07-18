@@ -1,0 +1,328 @@
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* choosing width when changing browser width */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .grid {
+        width: 714px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .grid {
+        width: 984px;
+    }
+}
+/* remember padding container of row (most outside when width is 100%)
+or reset it to 0 to advoid width of row > width of device
+here is initial so I dont set it to default (-4px) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+/* if you want to no gutter */
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* if you want to no gutter */
+.row.no-gutter .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.s-col-0 {
+    display: none;
+}
+.s-col-1 {
+    width: 8.333%;
+}
+.s-col-2 {
+    width: 16.667%;
+}
+.s-col-3 {
+    width: 25%;
+}
+.s-col-4 {
+    width: 33.333%;
+}
+.s-col-5 {
+    width: 41.667%;
+}
+.s-col-6 {
+    width: 50%;
+}
+.s-col-7 {
+    width: 58.333%;
+}
+.s-col-8 {
+    width: 66.667%;
+}
+.s-col-9 {
+    width: 75%;
+}
+.s-col-10 {
+    width: 83.333%;
+}
+.s-col-11 {
+    width: 91.667%;
+}
+.s-col-12 {
+    width: 100%;
+}
+
+/* initital full number of column but normally on mobile,
+only using s-col-0 and s-col-12 */
+
+/* column offset */
+.s-0-1 {
+    margin-left: 8.333%;
+}
+.s-0-2 {
+    margin-left: 16.667%;
+}
+.s-0-3 {
+    margin-left: 25%;
+}
+.s-0-4 {
+    margin-left: 33.333%;
+}
+.s-0-5 {
+    margin-left: 41.667%;
+}
+.s-0-6 {
+    margin-left: 50%;
+}
+.s-0-7 {
+    margin-left: 58.333%;
+}
+.s-0-8 {
+    margin-left: 66.667%;
+}
+.s-0-9 {
+    margin-left: 75%;
+}
+.s-0-10 {
+    margin-left: 83.333%;
+}
+.s-0-11 {
+    margin-left: 91.667%;
+}
+
+@media screen and (min-width: 740px) {
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .m-col-1,
+    .m-col-2,
+    .m-col-3,
+    .m-col-4,
+    .m-col-5,
+    .m-col-6,
+    .m-col-7,
+    .m-col-8,
+    .m-col-9,
+    .m-col-10,
+    .m-col-11,
+    .m-col-12 {
+        display: block;
+    }
+
+    .m-col-0 {
+        display: none;
+    }
+    .m-col-1 {
+        width: 8.333%;
+    }
+    .m-col-2 {
+        width: 16.667%;
+    }
+    .m-col-3 {
+        width: 25%;
+    }
+    .m-col-4 {
+        width: 33.333%;
+    }
+    .m-col-5 {
+        width: 41.667%;
+    }
+    .m-col-6 {
+        width: 50%;
+    }
+    .m-col-7 {
+        width: 58.333%;
+    }
+    .m-col-8 {
+        width: 66.667%;
+    }
+    .m-col-9 {
+        width: 75%;
+    }
+    .m-col-10 {
+        width: 83.333%;
+    }
+    .m-col-11 {
+        width: 91.667%;
+    }
+    .m-col-12 {
+        width: 100%;
+    }
+
+    /* column offset */
+    .m-0-1 {
+        margin-left: 8.333%;
+    }
+    .m-0-2 {
+        margin-left: 16.667%;
+    }
+    .m-0-3 {
+        margin-left: 25%;
+    }
+    .m-0-4 {
+        margin-left: 33.333%;
+    }
+    .m-0-5 {
+        margin-left: 41.667%;
+    }
+    .m-0-6 {
+        margin-left: 50%;
+    }
+    .m-0-7 {
+        margin-left: 58.333%;
+    }
+    .m-0-8 {
+        margin-left: 66.667%;
+    }
+    .m-0-9 {
+        margin-left: 75%;
+    }
+    .m-0-10 {
+        margin-left: 83.333%;
+    }
+    .m-0-11 {
+        margin-left: 91.667%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .l-col-1,
+    .l-col-2,
+    .l-col-3,
+    .l-col-4,
+    .l-col-5,
+    .l-col-6,
+    .l-col-7,
+    .l-col-8,
+    .l-col-9,
+    .l-col-10,
+    .l-col-11,
+    .l-col-12 {
+        display: block;
+    }
+
+    .l-col-0 {
+        display: none;
+    }
+    .l-col-1 {
+        width: 8.333%;
+    }
+    .l-col-2 {
+        width: 16.667%;
+    }
+    .l-col-2-point-4 {
+        width: 20%;
+    }
+    .l-col-3 {
+        width: 25%;
+    }
+    .l-col-4 {
+        width: 33.333%;
+    }
+    .l-col-5 {
+        width: 41.667%;
+    }
+    .l-col-6 {
+        width: 50%;
+    }
+    .l-col-7 {
+        width: 58.333%;
+    }
+    .l-col-8 {
+        width: 66.667%;
+    }
+    .l-col-9 {
+        width: 75%;
+    }
+    .l-col-10 {
+        width: 83.333%;
+    }
+    .l-col-11 {
+        width: 91.667%;
+    }
+    .l-col-12 {
+        width: 100%;
+    }
+
+    /* column offset */
+    .l-0-1 {
+        margin-left: 8.333%;
+    }
+    .l-0-2 {
+        margin-left: 16.667%;
+    }
+    .l-0-3 {
+        margin-left: 25%;
+    }
+    .l-0-4 {
+        margin-left: 33.333%;
+    }
+    .l-0-5 {
+        margin-left: 41.667%;
+    }
+    .l-0-6 {
+        margin-left: 50%;
+    }
+    .l-0-7 {
+        margin-left: 58.333%;
+    }
+    .l-0-8 {
+        margin-left: 66.667%;
+    }
+    .l-0-9 {
+        margin-left: 75%;
+    }
+    .l-0-10 {
+        margin-left: 83.333%;
+    }
+    .l-0-11 {
+        margin-left: 91.667%;
+    }
+}
+
